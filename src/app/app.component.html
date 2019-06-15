@@ -1,0 +1,19 @@
+<mat-toolbar color="primary" class="header">
+
+  <mat-icon>blur_on</mat-icon>
+
+  <span>{{title}}</span>
+
+  <button mat-icon-button [mat-menu-trigger-for]="menu">
+    <mat-icon>more_vert</mat-icon>
+  </button>
+
+  <mat-menu x-position="before" #menu="matMenu">
+    <button mat-menu-item>Option 1</button>
+    <button mat-menu-item>Option 2</button>
+  </mat-menu>
+</mat-toolbar>
+
+<router-outlet></router-outlet>
+
+
